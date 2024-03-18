@@ -184,8 +184,9 @@ html .container, body .container {
 }
 
 #Home .col-md-6 .logo {
-	width: 340px; /*This changes the image size*/
+	width: 230px; /*This changes the image size*/
 	height: auto;
+	padding-top: 30px; /*This changes how far up or down the image is*/
 	padding-right: auto; /*This changes how far left or right the image is*/
 	position: relative;
 	left: 100%;
