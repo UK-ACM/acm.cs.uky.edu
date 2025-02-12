@@ -13,6 +13,14 @@ html .container, body .container {
     width: auto; 
 }
 
+span {
+    background: none !important;
+}
+
+#signup {
+	margin-top: 20px;
+}
+
 .yellow-glow {
   	color:#F5DE03;
 }
@@ -186,7 +194,7 @@ html .container, body .container {
 #Home .col-md-6 .logo {
 	width: 320px; /*This changes the image size*/
 	height: auto;
-	padding-top: auto; /*This changes how far up or down the image is*/
+	padding-top: 40px; /*This changes how far up or down the image is*/
 	padding-right: auto; /*This changes how far left or right the image is*/
 	position: relative;
 	left: 100%;

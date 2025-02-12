@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-    <title>CatHacks X Hackathon</title>
+    <title>CatHacks XI Hackathon</title>
     <head>
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="app/js/external/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -74,7 +74,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="logo" src="../img/CatHacks_X_Logo.png" alt = "roman cathacks logo"/>
+                        <img class="logo" src="../cathacks/img/CatHacks_XI_Logo.png" alt = "CatHacks XI Logo"/>
                         <!--<h2 style="text-align:center;"> December 11th - 13th, 2020 | Online </h2>-->
                     </div>
                 </div>
@@ -83,8 +83,8 @@
                         <!-- <h1 class="yellow"></h1> -->
                         <h1 class = "orange"></h1>
                         <h2 class="orange"><b>In-Person!</b></h2>
-						<h2 class="orange"><b>April 2024</b></h2><br>
-                        <div class = "bannerBtn">
+						<h2 class="orange"><b>April <span id="eventYear">2025</span></b></h2>
+                        <div id="signup" class = "bannerBtn">
                             <button class="main-btnBannerBtn" type = "button">
 								<a href="#Apply" data-toggle="collapse" data-target="#collapseIframe" aria-expanded="false" aria-controls="collapseExample">Sign Up!</a>
 							</button>
@@ -99,8 +99,8 @@
             <div class="container">
                 <div class="row">
                 <div class="about-box col-md-5">
-                    <h1>CatHacks X</h1>
-                    <p>In April 2015, CatHacks was the first national college hackathon in the state of Kentucky. This year, we're back for round ten. <br>
+                    <h1>CatHacks XI</h1>
+                    <p>In April 2015, CatHacks was the first national college hackathon in the state of Kentucky. This year, we're back for round eleven. <br>
 
                     During this hackathon, hackers from colleges across the nation and world will come together at the University of Kentucky to participate in CatHacks.
                   You'll have 24 hours to explore new technologies, meet talented students, and network with innovative technology companies.</p>
@@ -139,7 +139,7 @@
                         <div id="collapseIframe" class="collapse">
                             <h1> Sign Up </h1>
                             <div class="iframe-container">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSqNDwuT5CXhnPk5SJhyakBKiKpErQGGeR9RYvuJfzRPx84g/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNw9jWmZ7nOq-_k3qUatCpWP-JZ_FxWrnNVWiS6Yi-Tj1cZA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                             </div>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
                         <div class="text-box">
                             <h1> Sponsor </h1>
                             <p>CatHacks would not be possible without the support of our sponsors. These companies allow us to keep CatHacks a free and open event for our participants, who value the opportunity to network with industry leaders.</p>
-                            <p style="font-size:14px; font-weight:400;">Interested in sponsoring CatHacks X?</p>
+                            <p style="font-size:14px; font-weight:400;">Interested in sponsoring CatHacks XI?</p>
                             <button class="main-btn" onclick="window.open('http://acm.cs.uky.edu/cathacks/CatHacks-XI-sponsor-packet.pdf', '_blank');">Sponsorship Information</button> <br>
 							<!--<button class="main-btn" onclick="window.open('https://docs.google.com/presentation/d/1-ESxL4ety2-F0-2PThruNkH4ZGAUvxB7aNXTNNDLaOo/edit?usp=sharing', '_self');">Presentation</button><br>-->
                         </div>
@@ -161,8 +161,9 @@
                     <div class="sp-container col-md-5 offset-md-2">
                         <h3>Here's a look at this year's&nbsp;sponsors!</h3>
                         <div class="sp-box">
-                            <a href="https://www.patientsafetytech.com/" target="_blank"><img src="img/sponsor-logos/Challenge_Logo_stacked_RGB_gradient.png" alt="Patient Safety Challenge Logo"></a>
-                            <!--
+							<!--
+                            <a href="https://www.patientsafetytech.com/" target="_blank">
+							<img src="img/sponsor-logos/Challenge_Logo_stacked_RGB_gradient.png" alt="Patient Safety Challenge Logo"></a>
 							<a href="https://www.oreilly.com/" target="_blank"><img src="img/sponsor-logos/cathacksix_sponsor_logos/OReilly_logo_rgb.svg" alt="O'Reilly Logo"></a>
 							<a href="https://www.echo3d.co/" target="_blank"><img src="img/sponsor-logos/cathacksix_sponsor_logos/echo3D_logo.png" alt="echo3D Logo"></a>
 							<a href="https://www.grapevinehire.co/" target="_blank"><img src="img/sponsor-logos/cathacksix_sponsor_logos/grapevine_logo.png" alt="Grapevine Logo"></a>
@@ -175,7 +176,7 @@
                 </div>
             </div>
             <div class="footer"> 
-				&copy; CatHacks 2024. CatHacks is a <a href="http://acm.cs.uky.edu" target = "_blank">UK ACM</a>  and <a href="http://acm-w.cs.uky.edu" target = "_blank">UK ACM-W</a> event. 
+				&copy; CatHacks <span id="footerYear">2025</span>. CatHacks is a <a href="http://acm.cs.uky.edu" target = "_blank">UK ACM</a>  and <a href="http://acm-w.cs.uky.edu" target = "_blank">UK ACM-W</a> event. 
 			</div>
         </section>
 		
@@ -219,8 +220,7 @@
         <script src="app/js/main.js"></script>
 		
         <script>
-            $("#Home").backstretch("img/WebsiteBackground.png");
-            $("#About").backstretch("img/backgrounds/crowd1.png");
+            $("#Home").backstretch("img/WebsiteBackground.png");            $("#About").backstretch("img/backgrounds/crowd1.png");
             $("#Apply").backstretch("img/backgrounds/merchandise.png");
             $("#Sponsor").backstretch("img/backgrounds/sponsor1.png");
         </script>
@@ -259,6 +259,17 @@
                 });				
 			});
         </script>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				let currentYear = new Date().getFullYear();
+				document.getElementById("eventYear").textContent = currentYear;
+			});
+		</script>
+		
+		<script>
+			document.getElementById("footerYear").textContent = new Date().getFullYear();
+		</script>
 
         <!-- END Scripts -->
 
